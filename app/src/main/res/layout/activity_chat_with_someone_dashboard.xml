@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/appTheme"
+    tools:context=".ChatWithSomeone.ChatWithSomeoneDashboard">
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:src="@drawable/chat_with_someone"
+        android:layout_marginTop="40dp"
+        android:layout_alignParentTop="true"/>
+
+    <TextView
+        android:id="@+id/communication"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="communication helps!"
+        android:fontFamily="@font/handlee"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:textColor="@color/black"
+        android:layout_below="@id/icon"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/long_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/communication"
+        android:textColor="@color/black"
+        android:textAlignment="center"
+        android:fontFamily="@font/handlee"
+        android:paddingVertical="5dp"
+        android:paddingHorizontal="18dp"
+        android:textSize="18sp"
+        android:text="@string/chat_with_someone_longtext"/>
+
+
+    <EditText
+        android:id="@+id/nickname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="nickname . . ."
+        android:fontFamily="@font/handlee"
+        android:textColorHint="#515151"
+        android:background="@android:color/transparent"
+        android:layout_below="@id/long_text"
+        android:textColor="@color/black"
+        android:paddingHorizontal="20dp"
+        android:layout_marginTop="15dp"
+        android:textSize="26sp"
+        android:inputType="textEmailAddress"/>
+
+    <Button
+        android:id="@+id/chat_with_someone_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nickname"
+        android:layout_marginHorizontal="70dp"
+        android:textColor="@color/white"
+        android:layout_marginTop="15dp"
+        android:textSize="14sp"
+        android:backgroundTint="#3B579A"
+        android:text="Chat with someone"
+        android:fontFamily="@font/handlee"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_below="@id/chat_with_someone_button"
+        android:paddingHorizontal="25dp"
+        android:textSize="15sp"
+        android:fontFamily="@font/handlee"
+        android:textColor="#717070"
+        android:text="*by clicking chat with someone, you agree to not share your personal details and be friendly. &#xA; &#xA; Note, temporarily this feature is only available on Tuesdays and Wednesdays between 10 AM to 4 PM Nepali time. If you don\'t receive a response, please contact us at chat@webelievein.life (chat data is deleted after the session)"/>
+
+</RelativeLayout>

@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".QuestionnaireActivity"
+    android:background="@color/appTheme">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/topText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Let Us Know Your Situation Better"
+                android:textAlignment="center"
+                android:fontFamily="@font/handlee"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                android:padding="10dp"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:id="@+id/firstQuestion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/topText"
+                android:text="How are you feeling today?"
+                android:textSize="18sp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/handlee"
+                android:textColor="@color/black"
+                android:padding="4dp"
+                android:layout_marginStart="10dp"/>
+
+
+            <RadioGroup
+                android:layout_below="@id/firstQuestion"
+                android:id="@+id/firstQuestionGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp">
+
+                <RadioButton
+                    android:id="@+id/Happy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:text="Happy"/>
+
+                <RadioButton
+                    android:id="@+id/Excited"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:text="Excited"/>
+
+                <RadioButton
+                    android:id="@+id/Okay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:text="Okay"/>
+
+                <RadioButton
+                    android:id="@+id/Normal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:text="Normal"/>
+
+                <RadioButton
+                    android:id="@+id/Sad"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:text="Sad"/>
+
+            </RadioGroup>
+
+
+            <TextView
+                android:id="@+id/secondQuestion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/firstQuestionGroup"
+                android:text="Have you been able to get proper sleep lately?"
+                android:textSize="18sp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/handlee"
+                android:textColor="@color/black"
+                android:padding="4dp"
+                android:layout_marginStart="10dp"/>
+
+
+            <RadioGroup
+                android:layout_below="@id/secondQuestion"
+                android:id="@+id/secondQuestionGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp">
+
+                <RadioButton
+                    android:id="@+id/yes2"
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/black"
+                    android:layout_height="wrap_content"
+                    android:text="Yes"/>
+
+                <RadioButton
+                    android:id="@+id/no2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:text="No"/>
+
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/thirdQuestion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/secondQuestionGroup"
+                android:text="Is anything causing distress in your life?"
+                android:textSize="18sp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/handlee"
+                android:textColor="@color/black"
+                android:padding="4dp"
+                android:layout_marginStart="10dp"/>
+
+
+            <RadioGroup
+                android:layout_below="@id/thirdQuestion"
+                android:id="@+id/thirdQuestionGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp">
+
+                <RadioButton
+                    android:id="@+id/yes3"
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/black"
+                    android:layout_height="wrap_content"
+                    android:text="Yes"/>
+
+                <RadioButton
+                    android:id="@+id/no3"
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/black"
+                    android:layout_height="wrap_content"
+                    android:text="No"/>
+
+            </RadioGroup>
+
+            <Button
+                android:id="@+id/continueToPage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/thirdQuestionGroup"
+                android:text="Continue"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/black"/>
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+
+</RelativeLayout>

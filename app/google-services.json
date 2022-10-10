@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "336545260737",
+    "project_id": "believe-e4596",
+    "storage_bucket": "believe-e4596.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:336545260737:android:8c75072097af9bf3502040",
+        "android_client_info": {
+          "package_name": "np.com.aayushgautam.believe"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "336545260737-87a9hll07n1jb2na90k4mhjng6kdp2rn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCfaI4GPgo5-x-CTU2myfE9qgnqZBvzn1Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "336545260737-87a9hll07n1jb2na90k4mhjng6kdp2rn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

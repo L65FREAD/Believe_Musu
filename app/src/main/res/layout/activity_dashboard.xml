@@ -1,0 +1,797 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F2EFE0"
+    tools:context=".Dashboard">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/mentalHealth"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="15dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:hapticFeedbackEnabled="true"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/mental_health_background">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="20dp"
+                android:padding="5dp"
+                android:src="@drawable/mental_health" />
+
+            <TextView
+                android:id="@+id/about"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:fontFamily="@font/montaga"
+                android:text="Specialist Support"
+                android:layout_centerInParent="true"
+                android:textStyle="bold"
+                android:textSize="17sp" />
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+<!--    <androidx.cardview.widget.CardView-->
+<!--        android:id="@+id/journal"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@id/meditation"-->
+<!--        android:layout_alignParentStart="true"-->
+<!--        android:layout_toLeftOf="@id/divider"-->
+<!--        android:hapticFeedbackEnabled="true"-->
+<!--        android:layout_marginStart="15dp"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        android:layout_marginEnd="10dp"-->
+<!--        app:cardCornerRadius="10dp"-->
+<!--        app:cardElevation="10dp">-->
+
+<!--        <RelativeLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="180dp"-->
+<!--            android:background="@drawable/journal_background">-->
+
+<!--            <ImageView-->
+<!--                android:layout_width="75dp"-->
+<!--                android:layout_height="75dp"-->
+<!--                android:layout_alignParentEnd="true"-->
+<!--                android:layout_alignParentBottom="true"-->
+<!--                android:layout_marginRight="10dp"-->
+<!--                android:layout_marginBottom="15dp"-->
+<!--                android:src="@drawable/journal" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/daily"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_alignParentStart="true"-->
+<!--                android:layout_alignParentTop="true"-->
+<!--                android:layout_marginStart="20dp"-->
+<!--                android:layout_marginTop="20dp"-->
+<!--                android:fontFamily="@font/montaga"-->
+<!--                android:text="Daily"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:textSize="17sp"-->
+<!--                android:textStyle="bold" />-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_below="@id/daily"-->
+<!--                android:layout_alignParentStart="true"-->
+<!--                android:layout_marginStart="20dp"-->
+<!--                android:fontFamily="@font/montaga"-->
+<!--                android:text="Journal"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:textSize="17sp"-->
+<!--                android:textStyle="bold" />-->
+
+<!--        </RelativeLayout>-->
+<!--    </androidx.cardview.widget.CardView>-->
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_below="@id/mentalHealth"
+        android:layout_centerHorizontal="true"
+        android:background="?android:attr/listDivider" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/chat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mentalHealth"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="15dp"
+        android:layout_alignParentEnd="true"
+        android:layout_toRightOf="@id/divider"
+        android:hapticFeedbackEnabled="true"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:background="@drawable/chat_background">
+
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="15dp"
+                android:src="@drawable/chat" />
+
+            <TextView
+                android:id="@+id/chat_with"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/montaga"
+                android:text="@string/chat_with"
+                android:textColor="@color/black"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/chat_with"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="20dp"
+                android:fontFamily="@font/montaga"
+                android:text="@string/someone"
+                android:textColor="@color/black"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/self_help"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hapticFeedbackEnabled="true"
+        app:cardElevation="10dp"
+        app:cardCornerRadius="10dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:layout_below="@id/mentalHealth"
+        android:layout_toLeftOf="@id/divider">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:background="@drawable/self_help_blog">
+
+            <ImageView
+                android:id="@+id/blogicon"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="10dp"
+                android:layout_marginEnd="10dp"
+                android:src="@drawable/blog" />
+
+            <TextView
+                android:id="@+id/self"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:fontFamily="@font/montaga"
+                android:layout_marginStart="20dp"
+                android:textColor="@color/black"
+                android:layout_marginTop="20dp"
+                android:text="Wellness"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/check"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/self"
+                android:layout_alignParentStart="true"
+                android:fontFamily="@font/montaga"
+                android:textColor="@color/black"
+                android:layout_marginStart="20dp"
+                android:text="Check"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/self_help1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hapticFeedbackEnabled="true"
+        app:cardElevation="10dp"
+        app:cardCornerRadius="10dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:layout_below="@id/self_help"
+        android:layout_toLeftOf="@id/divider">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:background="@drawable/self_help_blog">
+
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="15dp"
+                android:layout_marginEnd="10dp"
+                android:src="@drawable/blog" />
+
+            <TextView
+                android:id="@+id/self1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:fontFamily="@font/montaga"
+                android:layout_marginStart="10dp"
+                android:textColor="@color/black"
+                android:layout_marginTop="20dp"
+                android:text="Wellness"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/check1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/self1"
+                android:layout_alignParentStart="true"
+                android:fontFamily="@font/montaga"
+                android:textColor="@color/black"
+                android:layout_marginStart="10dp"
+                android:text="Check"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/journal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="15dp"
+        android:hapticFeedbackEnabled="true"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="10dp"
+        android:layout_below="@id/chat"
+        android:layout_toEndOf="@id/divider">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:background="@drawable/journal_background">
+
+            <ImageView
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="15dp"
+                android:src="@drawable/journal" />
+
+            <TextView
+                android:id="@+id/daily"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/montaga"
+                android:text="Daily"
+                android:textColor="@color/black"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/daily"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="20dp"
+                android:fontFamily="@font/montaga"
+                android:text="Journal"
+                android:textColor="@color/black"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/meditation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:cardCornerRadius="10dp"
+        android:hapticFeedbackEnabled="true"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        app:cardElevation="10dp"
+        android:layout_below="@id/self_help1"
+        android:layout_centerHorizontal="true">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/meditation_background">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="20dp"
+                android:padding="5dp"
+                android:src="@drawable/meditation" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:fontFamily="@font/montaga"
+                android:text="Meditation"
+                android:textColor="@color/black"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <com.getbase.floatingactionbutton.FloatingActionsMenu
+        android:id="@+id/fab_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:hapticFeedbackEnabled="true"
+        app:fab_addButtonSize="mini"
+        android:elevation="10dp"
+        app:fab_addButtonColorNormal="#F1D4A2"
+        app:fab_expandDirection="right"
+        android:layout_below="@id/meditation">
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/facebook"
+            app:fab_size="mini"
+            app:fab_colorNormal="#FFF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_icon="@drawable/facebook_icon"/>
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/instagram"
+            app:fab_size="mini"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_colorNormal="#FFF"
+            app:fab_icon="@drawable/instagram_icon"/>
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/spotify"
+            app:fab_size="mini"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_colorNormal="#FFF"
+            app:fab_icon="@drawable/spotify_icon"/>
+
+    </com.getbase.floatingactionbutton.FloatingActionsMenu>
+
+
+</RelativeLayout>
+    <!--<?xml version="1.0" encoding="utf-8"?>-->
+    <!--<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
+    <!--xmlns:tools="http://schemas.android.com/tools"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:background="#F2EFE0"-->
+    <!--tools:context=".Dashboard">-->
+
+    <!--<androidx.cardview.widget.CardView-->
+    <!--    android:id="@+id/meditation"-->
+    <!--    android:layout_width="match_parent"-->
+    <!--    android:layout_height="wrap_content"-->
+    <!--    android:layout_marginStart="15dp"-->
+    <!--    android:layout_marginTop="35dp"-->
+    <!--    android:layout_marginEnd="15dp"-->
+    <!--    android:hapticFeedbackEnabled="true"-->
+    <!--    app:cardCornerRadius="10dp"-->
+    <!--    app:cardElevation="10dp"-->
+    <!--    app:layout_constraintEnd_toEndOf="parent"-->
+    <!--    app:layout_constraintStart_toStartOf="parent"-->
+    <!--    app:layout_constraintTop_toTopOf="parent">-->
+
+    <!--    <RelativeLayout-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="60dp"-->
+    <!--        android:background="@drawable/meditation_background">-->
+
+    <!--        <ImageView-->
+    <!--            android:layout_width="60dp"-->
+    <!--            android:layout_height="60dp"-->
+    <!--            android:layout_alignParentStart="true"-->
+    <!--            android:layout_marginStart="20dp"-->
+    <!--            android:padding="5dp"-->
+    <!--            android:src="@drawable/meditation" />-->
+
+    <!--        <TextView-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_centerInParent="true"-->
+    <!--            android:layout_gravity="center"-->
+    <!--            android:fontFamily="@font/montaga"-->
+    <!--            android:text="Meditation"-->
+    <!--            android:textColor="@color/black"-->
+    <!--            android:textSize="17sp"-->
+    <!--            android:textStyle="bold" />-->
+    <!--    </RelativeLayout>-->
+    <!--</androidx.cardview.widget.CardView>-->
+
+    <!--<androidx.cardview.widget.CardView-->
+    <!--    android:id="@+id/journal"-->
+    <!--    android:layout_width="0dp"-->
+    <!--    android:layout_height="wrap_content"-->
+    <!--    android:layout_below="@id/meditation"-->
+    <!--    android:hapticFeedbackEnabled="true"-->
+    <!--    android:layout_marginStart="15dp"-->
+    <!--    android:layout_marginTop="15dp"-->
+    <!--    android:layout_marginEnd="10dp"-->
+    <!--    app:cardCornerRadius="10dp"-->
+    <!--    app:cardElevation="10dp"-->
+    <!--    app:layout_constraintEnd_toStartOf="@id/mentalHealth"-->
+    <!--    app:layout_constraintStart_toStartOf="parent"-->
+    <!--    app:layout_constraintTop_toBottomOf="@+id/meditation">-->
+
+    <!--    <RelativeLayout-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="180dp"-->
+    <!--        android:background="@drawable/journal_background">-->
+
+    <!--        <ImageView-->
+    <!--            android:layout_width="75dp"-->
+    <!--            android:layout_height="75dp"-->
+    <!--            android:layout_alignParentEnd="true"-->
+    <!--            android:layout_alignParentBottom="true"-->
+    <!--            android:layout_marginRight="10dp"-->
+    <!--            android:layout_marginBottom="15dp"-->
+    <!--            android:src="@drawable/journal" />-->
+
+    <!--        <TextView-->
+    <!--            android:id="@+id/daily"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_alignParentStart="true"-->
+    <!--            android:layout_alignParentTop="true"-->
+    <!--            android:layout_marginStart="20dp"-->
+    <!--            android:layout_marginTop="20dp"-->
+    <!--            android:fontFamily="@font/montaga"-->
+    <!--            android:text="Daily"-->
+    <!--            android:textColor="@color/black"-->
+    <!--            android:textSize="17sp"-->
+    <!--            android:textStyle="bold" />-->
+
+    <!--        <TextView-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_below="@id/daily"-->
+    <!--            android:layout_alignParentStart="true"-->
+    <!--            android:layout_marginStart="20dp"-->
+    <!--            android:fontFamily="@font/montaga"-->
+    <!--            android:text="Journal"-->
+    <!--            android:textColor="@color/black"-->
+    <!--            android:textSize="17sp"-->
+    <!--            android:textStyle="bold" />-->
+
+    <!--    </RelativeLayout>-->
+    <!--</androidx.cardview.widget.CardView>-->
+
+    <!--<androidx.cardview.widget.CardView-->
+    <!--    android:id="@+id/mentalHealth"-->
+    <!--    android:layout_width="0dp"-->
+    <!--    android:layout_height="wrap_content"-->
+    <!--    android:layout_marginStart="10dp"-->
+    <!--    android:layout_marginTop="15dp"-->
+    <!--    android:layout_marginEnd="15dp"-->
+    <!--    android:hapticFeedbackEnabled="true"-->
+    <!--    app:cardCornerRadius="10dp"-->
+    <!--    app:cardElevation="10dp"-->
+    <!--    app:layout_constraintEnd_toEndOf="parent"-->
+    <!--    app:layout_constraintStart_toEndOf="@id/journal"-->
+    <!--    app:layout_constraintTop_toBottomOf="@+id/meditation">-->
+
+    <!--    <RelativeLayout-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="180dp"-->
+    <!--        android:background="@drawable/mental_health_background">-->
+
+    <!--        <ImageView-->
+    <!--            android:layout_width="80dp"-->
+    <!--            android:layout_height="80dp"-->
+    <!--            android:layout_alignParentEnd="true"-->
+    <!--            android:layout_alignParentBottom="true"-->
+    <!--            android:layout_marginRight="10dp"-->
+    <!--            android:layout_marginBottom="15dp"-->
+    <!--            android:src="@drawable/mental_health" />-->
+
+    <!--        <TextView-->
+    <!--            android:id="@+id/mental"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_alignParentStart="true"-->
+    <!--            android:layout_alignParentTop="true"-->
+    <!--            android:layout_marginStart="20dp"-->
+    <!--            android:layout_marginTop="20dp"-->
+    <!--            android:fontFamily="@font/montaga"-->
+    <!--            android:text="Mental Health"-->
+    <!--            android:textColor="@color/black"-->
+    <!--            android:textSize="17sp"-->
+    <!--            android:textStyle="bold" />-->
+
+    <!--        <TextView-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_below="@id/mental"-->
+    <!--            android:layout_alignParentStart="true"-->
+    <!--            android:fontFamily="@font/montaga"-->
+    <!--            android:paddingLeft="20dp"-->
+    <!--            android:text="Specialist"-->
+    <!--            android:textColor="@color/black"-->
+    <!--            android:textSize="17sp"-->
+    <!--            android:textStyle="bold" />-->
+
+    <!--    </RelativeLayout>-->
+
+    <!--</androidx.cardview.widget.CardView>-->
+
+    <!--<androidx.cardview.widget.CardView-->
+    <!--    android:id="@+id/self_help"-->
+    <!--    android:layout_width="0dp"-->
+    <!--    android:hapticFeedbackEnabled="true"-->
+    <!--    app:cardElevation="10dp"-->
+    <!--    android:layout_height="wrap_content"-->
+    <!--    app:cardCornerRadius="10dp"-->
+    <!--    android:layout_marginStart="15dp"-->
+    <!--    android:layout_marginTop="15dp"-->
+    <!--    android:layout_marginEnd="10dp"-->
+    <!--    app:layout_constraintEnd_toStartOf="@id/chat"-->
+    <!--    app:layout_constraintStart_toStartOf="parent"-->
+    <!--    app:layout_constraintTop_toBottomOf="@+id/journal">-->
+
+    <!--    <RelativeLayout-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="180dp"-->
+    <!--        android:background="@drawable/self_help_blog">-->
+
+    <!--        <ImageView-->
+    <!--            android:layout_width="80dp"-->
+    <!--            android:layout_height="80dp"-->
+    <!--            android:layout_alignParentEnd="true"-->
+    <!--            android:layout_alignParentBottom="true"-->
+    <!--            android:layout_marginBottom="15dp"-->
+    <!--            android:layout_marginRight="10dp"-->
+    <!--            android:src="@drawable/blog" />-->
+
+    <!--        <TextView-->
+    <!--            android:id="@+id/self"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_alignParentStart="true"-->
+    <!--            android:layout_alignParentTop="true"-->
+    <!--            android:fontFamily="@font/montaga"-->
+    <!--            android:layout_marginStart="20dp"-->
+    <!--            android:textColor="@color/black"-->
+    <!--            android:layout_marginTop="20dp"-->
+    <!--            android:text="Self - Help"-->
+    <!--            android:textSize="17sp"-->
+    <!--            android:textStyle="bold" />-->
+
+    <!--        <TextView-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_below="@id/self"-->
+    <!--            android:layout_alignParentStart="true"-->
+    <!--            android:fontFamily="@font/montaga"-->
+    <!--            android:textColor="@color/black"-->
+    <!--            android:layout_marginStart="20dp"-->
+    <!--            android:text="Blogs"-->
+    <!--            android:textSize="17sp"-->
+    <!--            android:textStyle="bold" />-->
+
+    <!--    </RelativeLayout>-->
+    <!--</androidx.cardview.widget.CardView>-->
+
+    <!--<androidx.cardview.widget.CardView-->
+    <!--    android:id="@+id/chat"-->
+    <!--    android:layout_width="0dp"-->
+    <!--    android:layout_height="wrap_content"-->
+    <!--    android:layout_marginStart="10dp"-->
+    <!--    android:layout_marginTop="15dp"-->
+    <!--    android:layout_marginEnd="15dp"-->
+    <!--    android:hapticFeedbackEnabled="true"-->
+    <!--    app:cardCornerRadius="10dp"-->
+    <!--    app:cardElevation="10dp"-->
+    <!--    app:layout_constraintEnd_toEndOf="parent"-->
+    <!--    app:layout_constraintStart_toEndOf="@+id/self_help"-->
+    <!--    app:layout_constraintTop_toBottomOf="@+id/mentalHealth">-->
+
+    <!--    <RelativeLayout-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="180dp"-->
+    <!--        android:background="@drawable/chat_background">-->
+
+    <!--        <ImageView-->
+    <!--            android:layout_width="70dp"-->
+    <!--            android:layout_height="70dp"-->
+    <!--            android:layout_alignParentEnd="true"-->
+    <!--            android:layout_alignParentBottom="true"-->
+    <!--            android:layout_marginRight="10dp"-->
+    <!--            android:layout_marginBottom="15dp"-->
+    <!--            android:src="@drawable/chat" />-->
+
+    <!--        <TextView-->
+    <!--            android:id="@+id/chat_with"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_alignParentStart="true"-->
+    <!--            android:layout_alignParentTop="true"-->
+    <!--            android:layout_marginStart="20dp"-->
+    <!--            android:layout_marginTop="20dp"-->
+    <!--            android:fontFamily="@font/montaga"-->
+    <!--            android:text="Chat With"-->
+    <!--            android:textColor="@color/black"-->
+    <!--            android:textSize="17sp"-->
+    <!--            android:textStyle="bold" />-->
+
+    <!--        <TextView-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_below="@id/chat_with"-->
+    <!--            android:layout_alignParentStart="true"-->
+    <!--            android:layout_marginStart="20dp"-->
+    <!--            android:fontFamily="@font/montaga"-->
+    <!--            android:text="Someone"-->
+    <!--            android:textColor="@color/black"-->
+    <!--            android:textSize="17sp"-->
+    <!--            android:textStyle="bold" />-->
+
+    <!--    </RelativeLayout>-->
+
+    <!--</androidx.cardview.widget.CardView>-->
+
+    <!--<androidx.cardview.widget.CardView-->
+    <!--    android:id="@+id/aboutBelieve"-->
+    <!--    android:layout_width="match_parent"-->
+    <!--    android:layout_height="wrap_content"-->
+    <!--    android:layout_marginTop="20dp"-->
+    <!--    app:layout_constraintEnd_toEndOf="parent"-->
+    <!--    app:cardCornerRadius="10dp"-->
+    <!--    android:hapticFeedbackEnabled="true"-->
+    <!--    android:layout_marginRight="15dp"-->
+    <!--    android:layout_marginLeft="15dp"-->
+    <!--    app:cardElevation="10dp"-->
+    <!--    app:layout_constraintStart_toEndOf="parent"-->
+    <!--    app:layout_constraintTop_toBottomOf="@id/chat">-->
+
+    <!--    <RelativeLayout-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="60dp"-->
+    <!--        android:background="@drawable/suicidal_hotline">-->
+
+    <!--        <TextView-->
+    <!--            android:id="@+id/about"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:textColor="@color/black"-->
+    <!--            android:layout_centerVertical="true"-->
+    <!--            android:layout_gravity="center"-->
+    <!--            android:fontFamily="@font/montaga"-->
+    <!--            android:text="About   "-->
+    <!--            android:layout_toLeftOf="@id/title"-->
+    <!--            android:textStyle="bold"-->
+    <!--            android:textSize="17sp" />-->
+
+    <!--        <ImageView-->
+    <!--            android:id="@+id/title"-->
+    <!--            android:layout_width="150dp"-->
+    <!--            android:layout_centerInParent="true"-->
+    <!--            android:layout_height="50dp"-->
+    <!--            android:layout_centerVertical="true"-->
+    <!--            android:src="@drawable/title"/>-->
+    <!--    </RelativeLayout>-->
+    <!--</androidx.cardview.widget.CardView>-->
+
+    <!--<com.getbase.floatingactionbutton.FloatingActionsMenu-->
+    <!--    android:layout_width="wrap_content"-->
+    <!--    android:layout_height="wrap_content"-->
+    <!--    android:layout_marginStart="10dp"-->
+    <!--    android:layout_marginTop="20dp"-->
+    <!--    android:hapticFeedbackEnabled="true"-->
+    <!--    app:fab_addButtonSize="mini"-->
+    <!--    android:elevation="10dp"-->
+    <!--    app:fab_addButtonColorNormal="#F1D4A2"-->
+    <!--    app:fab_expandDirection="right"-->
+    <!--    app:layout_constraintStart_toStartOf="parent"-->
+    <!--    app:layout_constraintTop_toBottomOf="@+id/aboutBelieve">-->
+
+    <!--    <com.getbase.floatingactionbutton.FloatingActionButton-->
+    <!--        android:id="@+id/facebook"-->
+    <!--        app:fab_size="mini"-->
+    <!--        app:fab_colorNormal="#FFF"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        app:fab_icon="@drawable/facebook_icon"/>-->
+
+    <!--    <com.getbase.floatingactionbutton.FloatingActionButton-->
+    <!--        android:id="@+id/instagram"-->
+    <!--        app:fab_size="mini"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        app:fab_colorNormal="#FFF"-->
+    <!--        app:fab_icon="@drawable/instagram_icon"/>-->
+
+    <!--    <com.getbase.floatingactionbutton.FloatingActionButton-->
+    <!--        android:id="@+id/spotify"-->
+    <!--        app:fab_size="mini"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        app:fab_colorNormal="#FFF"-->
+    <!--        app:fab_icon="@drawable/spotify_icon"/>-->
+
+    <!--</com.getbase.floatingactionbutton.FloatingActionsMenu>-->
+
+
+    <!--</androidx.constraintlayout.widget.ConstraintLayout>-->
+

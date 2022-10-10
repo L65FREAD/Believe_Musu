@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F2EFE0"
+    tools:context=".MentahHealthProfessional.MentalHealthDashboard">
+
+    <ImageView
+        android:id="@+id/mentalHealthImage"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/mental_health_professional"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/seek_help"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mentalHealthImage"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/handlee"
+        android:text="seek help, its okay !"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="34sp" />
+
+    <TextView
+        android:id="@+id/long_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/seek_help"
+        android:fontFamily="@font/handlee"
+        android:paddingHorizontal="20dp"
+        android:paddingVertical="10dp"
+        android:text="You are not alone. Never hesitate to ask for help and consult with professionals. Your mental well-being is equally as important as your physical well-being."
+        android:textAlignment="center"
+        android:textColor="#373636"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/contact_mental_health_professional"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Contact a Mental Health Professional"
+        android:layout_marginHorizontal="30dp"
+        android:textSize="12sp"
+        android:layout_below="@id/long_text"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="#E7722D"/>
+
+    <Button
+        android:id="@+id/suicide_helpline"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Suicide Helpline"
+        android:background="@android:color/transparent"
+        android:textColor="#5676E8"
+        android:layout_below="@id/contact_mental_health_professional"/>
+
+    <TextView
+        android:id="@+id/another_long_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/suicide_helpline"
+        android:fontFamily="@font/handlee"
+        android:paddingHorizontal="20dp"
+        android:paddingTop="20dp"
+        android:text="we have partnered with Koshish, a mental health NGO, to provide you with professional help."
+        android:textAlignment="center"
+        android:layout_alignParentBottom="true"
+        android:textColor="#373636"
+        android:textSize="18sp" />
+
+</RelativeLayout>

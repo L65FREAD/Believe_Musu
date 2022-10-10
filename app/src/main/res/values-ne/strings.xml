@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Believe</string>
+    <string name="chat_with_someone_longtext">यदि तपाईं कहिल्यै एक्लो महसुस गर्दै हुनुहुन्छ र संघर्ष गर्दै हुनुहुन्छ भने, कसैसँग कुरा गर्दा साँच्चै मद्दत गर्दछ। जब तपाईलाई यो जस्तो लाग्छ, हामी यहाँ सुन्नको लागि छौं- हामी यहाँ छौं। तल तपाईंको लागि उपनाम प्रविष्ट गर्नुहोस् र बिलिभमा कसैसँग कुराकानी गर्नुहोस्।</string>
+    <string name="meditation_benifit">ध्यानले गहिरो आराम र शान्ति प्रदान गर्न सक्छ। ध्यानको समयमा, तपाईं आफ्नो दिमागलाई केन्द्रित गर्न सक्नुहुन्छ, र अव्यवस्थित विचारहरूको प्रवाहलाई हटाउन सक्नुहुन्छ जसले तपाईंको दिमागलाई भर्न सक्छ र तनाव उत्पन्न गर्न सक्छ। यस प्रक्रियाले शारीरिक र भावनात्मक स्वास्थ्य सुधार गर्न सक्छ।</string>
+    <string name="believe_intro">बिलिभ नेपाली समुदायका लागि मानसिक स्वास्थ्यलाई थप पहुँचयोग्य बनाउने पहल हो। हाम्रो नारा हो ‘Bring Back the Child in You’. हामी विश्वास गर्छौं कि सबैजना खुशी र माया गर्न योग्य छन् जुन तिनीहरू पहिले थिए।</string>
+    <string name="koshish_partnership">Koshish संग हाम्रो साझेदारी</string>
+    <string name="specialist">विशेषज्ञ</string>
+    <string name="mental_health">मानसिक स्वास्थ्य</string>
+    <string name="self_help">आत्म-मद्दत</string>
+    <string name="blogs">लेखनहरू</string>
+    <string name="chat_with">कसैसँग कुराकानी</string>
+    <string name="someone">गर्नुहोस्</string>
+</resources>

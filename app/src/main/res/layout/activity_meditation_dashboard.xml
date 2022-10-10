@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/appTheme"
+    tools:context=".Meditate.MeditationDashboard">
+
+    <ImageView
+        android:id="@+id/meditateImage"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/meditation_icon"
+        android:layout_marginTop="40dp"/>
+
+    <TextView
+        android:id="@+id/seek_help"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/meditateImage"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/handlee"
+        android:text="reduce stress, meditate!"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="34sp" />
+
+    <TextView
+        android:id="@+id/long_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/seek_help"
+        android:textSize="18sp"
+        android:fontFamily="@font/handlee"
+        android:textAlignment="center"
+        android:paddingHorizontal="20dp"
+        android:paddingVertical="10dp"
+        android:textColor="@color/black"
+        android:text="@string/meditation_benifit"/>
+
+
+    <Button
+        android:id="@+id/startMeditating"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Start Meditating"
+        android:layout_marginHorizontal="60dp"
+        android:textSize="12sp"
+        android:layout_below="@id/long_text"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/handlee"
+        android:backgroundTint="#ED8D2D"/>
+
+</RelativeLayout>

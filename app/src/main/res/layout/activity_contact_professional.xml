@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F2EFE0"
+    tools:context=".MentahHealthProfessional.ContactProfessional">
+
+    <ImageView
+        android:id="@+id/brain_image"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/brain_contact_mental_health"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="30dp"/>
+
+    <TextView
+        android:id="@+id/some_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/brain_image"
+        android:text="enter your details below and we will connect you with mental health professionals from Koshish. ,&#xA; *this is a free feature"
+        android:textAlignment="center"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/handlee"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:paddingHorizontal="15dp"/>
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="name . . ."
+        android:fontFamily="@font/handlee"
+        android:textColorHint="#515151"
+        android:background="@android:color/transparent"
+        android:layout_below="@id/some_text"
+        android:paddingHorizontal="20dp"
+        android:layout_marginTop="30dp"
+        android:textSize="26sp"
+        android:inputType="textPersonName"/>
+
+    <EditText
+        android:id="@+id/contactNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="contact no . . ."
+        android:fontFamily="@font/handlee"
+        android:textColorHint="#515151"
+        android:background="@android:color/transparent"
+        android:layout_below="@id/name"
+        android:paddingHorizontal="20dp"
+        android:layout_marginTop="10dp"
+        android:textSize="26sp"
+        android:inputType="phone"/>
+
+    <EditText
+        android:id="@+id/message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="message (if any) . . ."
+        android:fontFamily="@font/handlee"
+        android:textColorHint="#515151"
+        android:background="@android:color/transparent"
+        android:layout_below="@id/contactNumber"
+        android:paddingHorizontal="20dp"
+        android:layout_marginTop="10dp"
+        android:textSize="26sp"
+        android:inputType="textEmailAddress"/>
+
+    <Button
+        android:id="@+id/connect"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/message"
+        android:layout_marginTop="30dp"
+        android:text="Connect"
+        android:textSize="20sp"
+        android:backgroundTint="#F9BCB3"
+        android:layout_marginHorizontal="60dp"
+        android:fontFamily="@font/handlee"/>
+
+</RelativeLayout>

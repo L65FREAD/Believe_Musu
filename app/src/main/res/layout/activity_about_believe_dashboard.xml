@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F2EFE0"
+    tools:context=".AboutBelieve.AboutBelieveDashboard">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/gifLogo"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/believe_ko_bachha"/>
+
+            <ImageView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/gifLogo"
+                android:src="@drawable/title"/>
+
+            <TextView
+                android:id="@+id/bala"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="monospace"
+                android:textSize="18sp"
+                android:layout_below="@id/title"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="15dp"
+                android:textAlignment="textStart"
+
+                android:layout_marginEnd="15dp"
+                android:textColor="@color/black"
+                android:text="@string/believe_intro"/>
+
+            <ImageView
+                android:id="@+id/koshish_logo"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/koshsish_logo"
+                android:layout_below="@id/titleeee"/>
+
+            <TextView
+                android:id="@+id/titleeee"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/bala"
+                android:layout_marginTop="15dp"
+                android:text="@string/koshish_partnership"
+                android:fontFamily="monospace"
+                android:textAlignment="textStart"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="15dp"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:layout_below="@id/koshish_logo"
+                android:text="Our partner throughout our journey has been ‘Koshish’- the biggest NGO working in Nepal in the field of mental health. Here is a short introduction of कोशिश. &#xA; &#xA;
+कोशिश, राष्ट्रिय मानसिक स्वास्थ्य स्वावलम्बन संगठन वि.सं. २०६५ सालमा स्थापना भएको राष्ट्रियस्तरमा कार्य गर्ने एक गैरसरकारी संस्था हो । मानसिक स्वास्थ्य समस्या अनुभव गरेका व्यक्तिहरुको पहलमा स्थापित यो संस्था मनोसामाजिक अपाङ्गता भएका व्याक्तहरुको एक अग्रणी संस्था हो।
+कोशिश संस्थाले गुणस्तरीय मानसिक स्वास्थ्य तथा मनोसामाजिक सहायतासम्बन्धी सेवाको अनुकरणीय नमूना विकास गरी अन्य क्षेत्रहरुमा पनि लागू गर्न/गराउन राज्य एवं सरोकारवाला निकायहरुलाई सघाउ पुग्याउने उद्दशयल आफन करयकरमहर सञचलन गरद आएक छ । यसक सथ मनसक सवसथय समसय भएक वयकतहरपरत हन वयकतगत, समजक, वयवहरगत, ससथगत एव कनन अवरधहर हटई अनय वयकत सरह उनक लग कशशल परव गरद आइरहक छ।"
+                android:fontFamily="monospace"
+                android:textAlignment="textStart"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginTop="15dp"
+                android:textColor="@color/black"
+                android:layout_marginBottom="20dp"/>
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EAE7D3"
+    tools:context=".Meditate.MeditationWindow">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="set a timer and start meditating"
+        android:fontFamily="@font/handlee"
+        android:layout_marginTop="30dp"
+        android:textSize="26sp"
+        android:textColor="@color/black"
+        android:textAlignment="center"/>
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:src="@drawable/meditation"
+        android:layout_below="@id/title"
+        android:layout_marginTop="30dp"/>
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/gif"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:src="@drawable/hour_clock"
+        android:visibility="gone"
+        android:layout_below="@+id/icon"
+        android:layout_marginTop="20dp"/>
+
+    <EditText
+        android:id="@+id/minute"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/gif"
+        android:hint="00"
+        android:fontFamily="@font/handlee"
+        android:textColor="@color/black"
+        android:textSize="40sp"
+        android:maxLength="2"
+        android:background="@android:color/transparent"
+        android:layout_toLeftOf="@id/colon"
+        android:inputType="number"
+        android:layout_marginTop="17dp"/>
+
+    <TextView
+        android:id="@+id/countDownMinutes"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/gif"
+        android:textColor="@color/black"
+        android:fontFamily="@font/handlee"
+        android:textSize="40sp"
+        android:maxLength="2"
+        android:background="@android:color/transparent"
+        android:layout_toLeftOf="@id/colon"
+        android:layout_marginTop="17dp"/>
+
+    <TextView
+        android:id="@+id/colon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="40dp"
+        android:textColor="@color/black"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/gif"
+        android:text=":"
+        android:layout_centerHorizontal="true"/>
+
+    <EditText
+        android:id="@+id/seconds"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:layout_below="@id/gif"
+        android:hint="00"
+        android:fontFamily="@font/handlee"
+        android:textSize="40sp"
+        android:maxLength="2"
+        android:background="@android:color/transparent"
+        android:layout_toRightOf="@id/colon"
+        android:inputType="number"
+        android:layout_marginTop="17dp"/>
+
+    <TextView
+        android:id="@+id/countDownSeconds"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/gif"
+        android:fontFamily="@font/handlee"
+        android:textSize="40sp"
+        android:textColor="@color/black"
+        android:maxLength="2"
+        android:background="@android:color/transparent"
+        android:layout_toRightOf="@id/colon"
+        android:layout_marginTop="17dp"/>
+
+    <Button
+        android:id="@+id/startMeditating"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Meditate"
+        android:layout_marginHorizontal="80dp"
+        android:textSize="12sp"
+        android:layout_below="@id/colon"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/handlee"
+        android:backgroundTint="#F4942F"/>
+
+    <Button
+        android:visibility="gone"
+        android:id="@+id/stopMeditating"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Stop"
+        android:layout_marginHorizontal="80dp"
+        android:textSize="12sp"
+        android:layout_below="@id/colon"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/handlee"
+        android:backgroundTint="#F4942F"/>
+
+</RelativeLayout>

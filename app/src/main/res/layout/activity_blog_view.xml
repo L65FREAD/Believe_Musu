@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/appTheme"
+    android:layout_height="match_parent"
+    tools:context=".SelfHelp.BlogView">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/handlee"
+                android:text="Title"
+                android:paddingHorizontal="20dp"
+                android:textColor="#646E9C"
+                android:textSize="36sp"/>
+
+            <TextView
+                android:id="@+id/content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@id/title"
+                android:textSize="22sp"
+                android:paddingHorizontal="25dp"
+                android:textColor="@color/black"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/handlee"/>
+
+            <TextView
+                android:id="@+id/author"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/handlee"
+                android:text="- Author"
+                android:layout_below="@id/content"
+                android:paddingHorizontal="25dp"
+                android:layout_marginTop="15dp"
+                android:textSize="16sp"
+                android:layout_marginBottom="10dp"
+                android:textColor="@color/black"/>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
