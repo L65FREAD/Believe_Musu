@@ -1,0 +1,509 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F2EFE0"
+    tools:context=".WellnessCheck.FactorsChooser">
+
+    <TextView
+        android:id="@+id/factorsAffect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#0B5DA5"
+        android:layout_centerVertical="true"
+        android:layout_alignParentTop="true"
+        android:fontFamily="@font/handlee"
+        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="20dp"
+        android:text="Choose 3 factors that affect your happiness the most: "
+        android:layout_centerInParent="true"
+        android:textStyle="bold"
+        android:textSize="20sp" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_below="@id/factorsAffect"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="5dp"
+        android:background="#0B5DA5"/>
+
+    <View
+        android:id="@+id/verticalDivider"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_below="@id/factorsAffect"
+        android:layout_centerHorizontal="true"
+        android:background="?android:attr/listDivider" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/go_out"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/divider"
+        android:layout_alignParentEnd="false"
+        android:layout_toLeftOf="@id/verticalDivider"
+        android:hapticFeedbackEnabled="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="10dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="10dp"
+        android:clickable="true"
+        app:cardBackgroundColor="@color/white">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+
+            <TextView
+                android:id="@+id/go_out_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:textColor="#0B5DA5"
+                android:textSize="18sp"
+                android:fontFamily="@font/handlee"
+                android:textStyle="bold"
+                android:text="Going Out"/>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/watching_movie"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/go_out"
+        android:layout_alignParentEnd="false"
+        android:layout_toLeftOf="@id/verticalDivider"
+        android:hapticFeedbackEnabled="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="10dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="10dp"
+        app:cardBackgroundColor="@color/white">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+
+            <TextView
+                android:id="@+id/watching_movie_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:textColor="#0B5DA5"
+                android:textSize="18sp"
+                android:fontFamily="@font/handlee"
+                android:textStyle="bold"
+                android:text="Watching Movies"/>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/read"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/divider"
+        android:layout_alignParentEnd="false"
+        android:layout_toRightOf="@id/verticalDivider"
+        android:hapticFeedbackEnabled="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="20dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="10dp"
+        app:cardBackgroundColor="@color/white">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+
+            <TextView
+                android:id="@+id/read_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:textColor="#0B5DA5"
+                android:textSize="18sp"
+                android:fontFamily="@font/handlee"
+                android:textStyle="bold"
+                android:text="Reading"/>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/work_out"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/read"
+        android:layout_alignParentEnd="false"
+        android:layout_toRightOf="@id/verticalDivider"
+        android:hapticFeedbackEnabled="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="20dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="10dp"
+        app:cardBackgroundColor="@color/white">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+
+            <TextView
+                android:id="@+id/work_out_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:textColor="#0B5DA5"
+                android:textSize="18sp"
+                android:fontFamily="@font/handlee"
+                android:textStyle="bold"
+                android:text="Working Out"/>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/eat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/watching_movie"
+        android:layout_alignParentEnd="false"
+        android:layout_toLeftOf="@id/verticalDivider"
+        android:hapticFeedbackEnabled="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="10dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="10dp"
+        app:cardBackgroundColor="@color/white">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+
+            <TextView
+                android:id="@+id/eat_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:textColor="#0B5DA5"
+                android:textSize="18sp"
+                android:fontFamily="@font/handlee"
+                android:textStyle="bold"
+                android:text="Eating Well"/>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/sleep"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/watching_movie"
+        android:layout_alignParentEnd="false"
+        android:layout_toRightOf="@id/verticalDivider"
+        android:hapticFeedbackEnabled="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="20dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="10dp"
+        app:cardBackgroundColor="@color/white">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+
+            <TextView
+                android:id="@+id/sleep_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:textColor="#0B5DA5"
+                android:textSize="18sp"
+                android:fontFamily="@font/handlee"
+                android:textStyle="bold"
+                android:text="Proper Sleep"/>
+
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/factorsNoAffect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#1E5179"
+        android:layout_centerVertical="true"
+        android:layout_below="@id/sleep"
+        android:fontFamily="@font/handlee"
+        android:layout_marginTop="30dp"
+        android:layout_marginHorizontal="20dp"
+        android:text="Choose 3 factors that do not affect your happiness: "
+        android:layout_centerInParent="true"
+        android:textStyle="bold"
+        android:textSize="20sp" />
+
+    <View
+        android:id="@+id/divider1"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_below="@id/factorsNoAffect"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="5dp"
+        android:background="#1E5179"/>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/go_out1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/divider1"
+        android:layout_alignParentEnd="false"
+        android:layout_toLeftOf="@id/verticalDivider"
+        android:hapticFeedbackEnabled="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="10dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="10dp"
+        app:cardBackgroundColor="@color/white">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+
+            <TextView
+                android:id="@+id/go_out_text1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:textColor="#1E5179"
+                android:textSize="18sp"
+                android:fontFamily="@font/handlee"
+                android:textStyle="bold"
+                android:text="Going Out"/>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/watching_movie1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/go_out1"
+        android:layout_alignParentEnd="false"
+        android:layout_toLeftOf="@id/verticalDivider"
+        android:hapticFeedbackEnabled="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="10dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="10dp"
+        app:cardBackgroundColor="@color/white">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+
+            <TextView
+                android:id="@+id/watching_movie_text1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:textColor="#1E5179"
+                android:textSize="18sp"
+                android:fontFamily="@font/handlee"
+                android:textStyle="bold"
+                android:text="Watching Movies"/>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/read1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/divider1"
+        android:layout_alignParentEnd="false"
+        android:layout_toRightOf="@id/verticalDivider"
+        android:hapticFeedbackEnabled="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="20dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="10dp"
+        app:cardBackgroundColor="@color/white">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+
+            <TextView
+                android:id="@+id/read_text1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:textColor="#1E5179"
+                android:textSize="18sp"
+                android:fontFamily="@font/handlee"
+                android:textStyle="bold"
+                android:text="Reading"/>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/work_out1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/read1"
+        android:layout_alignParentEnd="false"
+        android:layout_toRightOf="@id/verticalDivider"
+        android:hapticFeedbackEnabled="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="20dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="10dp"
+        app:cardBackgroundColor="@color/white">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+
+            <TextView
+                android:id="@+id/work_out_text1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:textColor="#1E5179"
+                android:textSize="18sp"
+                android:fontFamily="@font/handlee"
+                android:textStyle="bold"
+                android:text="Working Out"/>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/eat1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/watching_movie1"
+        android:layout_alignParentEnd="false"
+        android:layout_toLeftOf="@id/verticalDivider"
+        android:hapticFeedbackEnabled="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="10dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="10dp"
+        app:cardBackgroundColor="@color/white">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+
+            <TextView
+                android:id="@+id/eat_text1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:textColor="#1E5179"
+                android:textSize="18sp"
+                android:fontFamily="@font/handlee"
+                android:textStyle="bold"
+                android:text="Eating Well"/>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/sleep1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/watching_movie1"
+        android:layout_alignParentEnd="false"
+        android:layout_toRightOf="@id/verticalDivider"
+        android:hapticFeedbackEnabled="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="20dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="10dp"
+        app:cardBackgroundColor="@color/white">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+
+            <TextView
+                android:id="@+id/sleep_text1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:textColor="#1E5179"
+                android:textSize="18sp"
+                android:fontFamily="@font/handlee"
+                android:textStyle="bold"
+                android:text="Proper Sleep"/>
+
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/continue_to_wellness"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Continue"
+        android:layout_marginHorizontal="60dp"
+        android:textSize="12sp"
+        android:layout_below="@id/eat1"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/handlee"
+        android:backgroundTint="#5172E6"
+        android:textColor="@color/white"/>
+
+</RelativeLayout>

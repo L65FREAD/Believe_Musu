@@ -24,6 +24,7 @@ import np.com.aayushgautam.believe.Journal.JournalDashboard;
 import np.com.aayushgautam.believe.Meditate.MeditationDashboard;
 import np.com.aayushgautam.believe.MentahHealthProfessional.MentalHealthDashboard;
 import np.com.aayushgautam.believe.SelfHelp.SelfHelpDashboard;
+import np.com.aayushgautam.believe.WellnessCheck.WellnessCheckDashboard;
 import np.com.aayushgautam.believe.databinding.ActivityDashboardBinding;
 
 public class Dashboard extends AppCompatActivity {
@@ -57,14 +58,6 @@ public class Dashboard extends AppCompatActivity {
             }
         });
 
-//        binding.aboutBelieve.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                Intent intent = new Intent(getApplicationContext(), AboutBelieveDashboard.class);
-//                startActivity(intent);
-//            }
-//        });
-
         binding.chat.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -88,6 +81,17 @@ public class Dashboard extends AppCompatActivity {
                     return;
                 }
                 Intent intent = new Intent(getApplicationContext(), SelfHelpDashboard.class);
+                startActivity(intent);
+            }
+        });
+
+        binding.wellnessCheck.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (!checkConnection()) {
+                    return;
+                }
+                Intent intent = new Intent(getApplicationContext(), WellnessCheckDashboard.class);
                 startActivity(intent);
             }
         });
@@ -116,6 +120,26 @@ public class Dashboard extends AppCompatActivity {
                 Uri uri = Uri.parse("https://anchor.fm/thebelievepodcast");
                 Intent intent = new Intent(Intent.ACTION_VIEW,uri);
                 startActivity(intent);
+            }
+        });
+
+        binding.helpline.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String number = ("tel:" + "166006152007");
+                Intent intent = new Intent(Intent.ACTION_CALL);
+                intent.setData(Uri.parse(number));
+                if (ContextCompat.checkSelfPermission(getApplicationContext(), Manifest.permission.CALL_PHONE) != PackageManager.PERMISSION_GRANTED) {
+                    ActivityCompat.requestPermissions(Dashboard.this,
+                            new String[]{Manifest.permission.CALL_PHONE},
+                            MY_PERMISSIONS_REQUEST_CALL_PHONE);
+                } else {
+                    try {
+                        startActivity(intent);
+                    } catch(SecurityException e) {
+                        e.printStackTrace();
+                    }
+                }
             }
         });
     }

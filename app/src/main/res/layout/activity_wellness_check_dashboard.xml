@@ -4,15 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/appTheme"
-    tools:context=".Meditate.MeditationDashboard">
+    android:background="#F2EFE0"
+    tools:context=".WellnessCheck.WellnessCheckDashboard">
 
     <ImageView
         android:id="@+id/meditateImage"
         android:layout_width="match_parent"
         android:layout_height="220dp"
         android:layout_centerHorizontal="true"
-        android:src="@drawable/meditation_icon"
+        android:src="@drawable/wellnesscheck"
         android:layout_marginTop="40dp"/>
 
     <TextView
@@ -23,10 +23,10 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
         android:fontFamily="@font/handlee"
-        android:text="reduce stress, meditate!"
+        android:text="know what makes you happy, using A.I!"
         android:textAlignment="center"
         android:textColor="@color/black"
-        android:textSize="34sp" />
+        android:textSize="24sp" />
 
     <TextView
         android:id="@+id/long_text"
@@ -43,16 +43,16 @@
 
 
     <Button
-        android:id="@+id/startMeditating"
+        android:id="@+id/wellness_button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Start Meditating"
+        android:text="Choose happiness"
         android:layout_marginHorizontal="60dp"
         android:textSize="12sp"
         android:layout_below="@id/long_text"
         android:layout_marginTop="20dp"
         android:fontFamily="@font/handlee"
-        android:backgroundTint="#ED8D2D"
-        android:textColor="@color/white"/>
+        android:textColor="@color/white"
+        android:backgroundTint="#3F81BA"/>
 
 </RelativeLayout>

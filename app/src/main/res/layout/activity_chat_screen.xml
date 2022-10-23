@@ -78,6 +78,7 @@
                     android:fontFamily="@font/handlee"
                     android:textSize="24sp"
                     android:hint="Message"
+                    android:background="@color/white"
                     android:layout_alignParentStart="true"
                     android:layout_marginStart="20dp"
                     android:layout_centerVertical="true"

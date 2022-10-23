@@ -33,14 +33,14 @@ public class MeditationDashboard extends AppCompatActivity {
         });
     }
 
-    @Override
-    public boolean onKeyDown(int keyCode, KeyEvent event)  {
-        if (keyCode == KeyEvent.KEYCODE_BACK ) {
-            Intent intent = new Intent(getApplicationContext(), Dashboard.class);
-            startActivity(intent);
-            return true;
-        }
-
-        return super.onKeyDown(keyCode, event);
-    }
+//    @Override
+//    public boolean onKeyDown(int keyCode, KeyEvent event)  {
+//        if (keyCode == KeyEvent.KEYCODE_BACK ) {
+//            Intent intent = new Intent(getApplicationContext(), Dashboard.class);
+//            startActivity(intent);
+//            return true;
+//        }
+//
+//        return super.onKeyDown(keyCode, event);
+//    }
 }

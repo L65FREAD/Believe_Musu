@@ -1,0 +1,631 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F2EFE0"
+    tools:context=".WellnessCheck.FactorInput">
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/calender"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/icon"
+        android:text="Daily Catchup"
+        android:fontFamily="@font/handlee"
+        android:layout_marginTop="45dp"
+        android:layout_marginStart="10dp"
+        android:textSize="28sp"
+        android:textColor="#363D4A"/>
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/icon"
+        android:layout_below="@id/title"
+        android:text="Saturday 22/10/2022"
+        android:layout_marginStart="10dp"
+        android:fontFamily="@font/handlee"
+        android:textSize="16sp"
+        android:textColor="#16A089"/>
+
+
+    <TextView
+        android:id="@+id/question1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/icon"
+        android:text="Did you watch any movies today?"
+        android:layout_marginHorizontal="20dp"
+        android:fontFamily="@font/handlee"
+        android:textSize="20sp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/black"/>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/yes1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/question1"
+        android:layout_alignParentEnd="false"
+        android:hapticFeedbackEnabled="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="10dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="10dp"
+        android:clickable="true"
+        app:cardBackgroundColor="@color/white">
+
+
+        <RelativeLayout
+            android:layout_width="100dp"
+            android:layout_height="35dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:fontFamily="@font/handlee"
+                android:textStyle="bold"
+                android:text="Yes"/>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/no1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/question1"
+        android:layout_alignParentEnd="false"
+        android:hapticFeedbackEnabled="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="10dp"
+        android:layout_toRightOf="@id/yes1"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="10dp"
+        android:clickable="true"
+        app:cardBackgroundColor="@color/white">
+
+
+        <RelativeLayout
+            android:layout_width="100dp"
+            android:layout_height="35dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:fontFamily="@font/handlee"
+                android:textStyle="bold"
+                android:text="No"/>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+    <TextView
+        android:id="@+id/question2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/yes1"
+        android:text="Did you go out today?"
+        android:layout_marginHorizontal="20dp"
+        android:fontFamily="@font/handlee"
+        android:textSize="20sp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/black"/>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/yes2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/question2"
+        android:layout_alignParentEnd="false"
+        android:hapticFeedbackEnabled="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="10dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="10dp"
+        android:clickable="true"
+        app:cardBackgroundColor="@color/white">
+
+
+        <RelativeLayout
+            android:layout_width="100dp"
+            android:layout_height="35dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:fontFamily="@font/handlee"
+                android:textStyle="bold"
+                android:text="Yes"/>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/no2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/question2"
+        android:layout_alignParentEnd="false"
+        android:hapticFeedbackEnabled="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="10dp"
+        android:layout_toRightOf="@id/yes2"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="10dp"
+        android:clickable="true"
+        app:cardBackgroundColor="@color/white">
+
+
+        <RelativeLayout
+            android:layout_width="100dp"
+            android:layout_height="35dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:fontFamily="@font/handlee"
+                android:textStyle="bold"
+                android:text="No"/>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/question3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/yes2"
+        android:text="Did you read today?"
+        android:layout_marginHorizontal="20dp"
+        android:fontFamily="@font/handlee"
+        android:textSize="20sp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/black"/>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/yes3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/question3"
+        android:layout_alignParentEnd="false"
+        android:hapticFeedbackEnabled="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="10dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="10dp"
+        android:clickable="true"
+        app:cardBackgroundColor="@color/white">
+
+
+        <RelativeLayout
+            android:layout_width="100dp"
+            android:layout_height="35dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:fontFamily="@font/handlee"
+                android:textStyle="bold"
+                android:text="Yes"/>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/no3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/question3"
+        android:layout_alignParentEnd="false"
+        android:hapticFeedbackEnabled="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="10dp"
+        android:layout_toRightOf="@id/yes3"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="10dp"
+        android:clickable="true"
+        app:cardBackgroundColor="@color/white">
+
+
+        <RelativeLayout
+            android:layout_width="100dp"
+            android:layout_height="35dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:fontFamily="@font/handlee"
+                android:textStyle="bold"
+                android:text="No"/>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/question4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/yes3"
+        android:text="Did you sleep well today?"
+        android:layout_marginHorizontal="20dp"
+        android:fontFamily="@font/handlee"
+        android:textSize="20sp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/black"/>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/yes4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/question4"
+        android:layout_alignParentEnd="false"
+        android:hapticFeedbackEnabled="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="10dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="10dp"
+        android:clickable="true"
+        app:cardBackgroundColor="@color/white">
+
+
+        <RelativeLayout
+            android:layout_width="100dp"
+            android:layout_height="35dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:fontFamily="@font/handlee"
+                android:textStyle="bold"
+                android:text="Yes"/>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/no4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/question4"
+        android:layout_alignParentEnd="false"
+        android:hapticFeedbackEnabled="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="10dp"
+        android:layout_toRightOf="@id/yes4"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="10dp"
+        android:clickable="true"
+        app:cardBackgroundColor="@color/white">
+
+
+        <RelativeLayout
+            android:layout_width="100dp"
+            android:layout_height="35dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:fontFamily="@font/handlee"
+                android:textStyle="bold"
+                android:text="No"/>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/question5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/yes4"
+        android:text="Did you eat well today?"
+        android:layout_marginHorizontal="20dp"
+        android:fontFamily="@font/handlee"
+        android:textSize="20sp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/black"/>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/yes5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/question5"
+        android:layout_alignParentEnd="false"
+        android:hapticFeedbackEnabled="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="10dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="10dp"
+        android:clickable="true"
+        app:cardBackgroundColor="@color/white">
+
+
+        <RelativeLayout
+            android:layout_width="100dp"
+            android:layout_height="35dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:fontFamily="@font/handlee"
+                android:textStyle="bold"
+                android:text="Yes"/>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/no5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/question5"
+        android:layout_alignParentEnd="false"
+        android:hapticFeedbackEnabled="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="10dp"
+        android:layout_toRightOf="@id/yes5"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="10dp"
+        android:clickable="true"
+        app:cardBackgroundColor="@color/white">
+
+
+        <RelativeLayout
+            android:layout_width="100dp"
+            android:layout_height="35dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:fontFamily="@font/handlee"
+                android:textStyle="bold"
+                android:text="No"/>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/question6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/yes5"
+        android:text="Did you work out today?"
+        android:layout_marginHorizontal="20dp"
+        android:fontFamily="@font/handlee"
+        android:textSize="20sp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/black"/>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/yes6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/question6"
+        android:layout_alignParentEnd="false"
+        android:hapticFeedbackEnabled="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="10dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="10dp"
+        android:clickable="true"
+        app:cardBackgroundColor="@color/white">
+
+
+        <RelativeLayout
+            android:layout_width="100dp"
+            android:layout_height="35dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:fontFamily="@font/handlee"
+                android:textStyle="bold"
+                android:text="Yes"/>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/no6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/question6"
+        android:layout_alignParentEnd="false"
+        android:hapticFeedbackEnabled="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="10dp"
+        android:layout_toRightOf="@id/yes6"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="10dp"
+        android:clickable="true"
+        app:cardBackgroundColor="@color/white">
+
+        <RelativeLayout
+            android:layout_width="100dp"
+            android:layout_height="35dp">
+
+            <TextView
+                android:id="@+id/go_out_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:fontFamily="@font/handlee"
+                android:textStyle="bold"
+                android:text="No"/>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+    <TextView
+        android:id="@+id/happy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/yes6"
+        android:text="Would you say you were happy today?"
+        android:layout_marginHorizontal="20dp"
+        android:fontFamily="@font/handlee"
+        android:textSize="20sp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/black"/>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/yes7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/happy"
+        android:layout_alignParentEnd="false"
+        android:hapticFeedbackEnabled="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="10dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="10dp"
+        android:clickable="true"
+        app:cardBackgroundColor="@color/white">
+
+
+        <RelativeLayout
+            android:layout_width="100dp"
+            android:layout_height="35dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:fontFamily="@font/handlee"
+                android:textStyle="bold"
+                android:text="Yes"/>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/no7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/happy"
+        android:layout_alignParentEnd="false"
+        android:hapticFeedbackEnabled="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="10dp"
+        android:layout_toRightOf="@id/yes7"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="10dp"
+        android:clickable="true"
+        app:cardBackgroundColor="@color/white">
+
+
+        <RelativeLayout
+            android:layout_width="100dp"
+            android:layout_height="35dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:fontFamily="@font/handlee"
+                android:textStyle="bold"
+                android:text="No"/>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/continueInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Continue"
+        android:layout_marginHorizontal="60dp"
+        android:textSize="12sp"
+        android:layout_below="@id/yes7"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/handlee"
+        android:backgroundTint="#515D72"
+        android:textColor="@color/white"/>
+
+
+
+
+
+
+</RelativeLayout>

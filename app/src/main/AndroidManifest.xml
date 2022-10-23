@@ -16,7 +16,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Believe">
-        <activity android:name=".QuestionnaireActivity"></activity>
+        <activity android:name=".WellnessCheck.Results"></activity>
+        <activity android:name=".WellnessCheck.FactorInput" />
+        <activity android:name=".WellnessCheck.FactorsChooser" />
+        <activity android:name=".WellnessCheck.WellnessCheckDashboard" />
+        <activity android:name=".QuestionnaireActivity" />
         <activity android:name=".ChatWithSomeone.ChatScreen" />
         <activity android:name=".SelfHelp.BlogView" />
         <activity android:name=".SelfHelp.SelfHelpDashboard" />

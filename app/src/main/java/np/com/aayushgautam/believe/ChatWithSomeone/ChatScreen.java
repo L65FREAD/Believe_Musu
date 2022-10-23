@@ -43,7 +43,7 @@ public class ChatScreen extends AppCompatActivity {
     private MessagesAdapter adapter;
     private int number = 1;
 
-    private String sleep, feeling, distress, messageFirst;
+    private String sleep, feeling, distress, messageFirst, terminal;
     boolean debounce = true;
 
     private static String userIdStatic;
@@ -64,7 +64,9 @@ public class ChatScreen extends AppCompatActivity {
         feeling = getIntent().getStringExtra("feeling");
         distress = getIntent().getStringExtra("distress");
 
-        messageFirst = "Feeling"+ feeling + "Proper Sleep: " + sleep + "Distress: " + distress;
+        terminal = sleep.equalsIgnoreCase("Yes") ? " ":" not ";
+        distress = distress.equalsIgnoreCase("Yes") ? " " : "not";
+        messageFirst = "Hi, today I'm feeling "+ feeling.toLowerCase() + ". I have"+ terminal +"been getting proper sleep. I do" + distress +"have things causing distress in my life. ";
 
         userIdStatic = userId;
         sessionIdStatic = sessionId;

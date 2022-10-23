@@ -4,7 +4,7 @@
         <!-- enable window content transitions -->
         <item name="android:windowActivityTransitions">true</item>
         <!-- Primary brand color. -->
-        <item name="colorPrimary">@color/black</item>
+        <item name="colorPrimary">@color/white</item>
         <item name="colorPrimaryVariant">@color/black</item>
         <item name="colorOnPrimary">@color/white</item>
         <!-- Secondary brand color. -->

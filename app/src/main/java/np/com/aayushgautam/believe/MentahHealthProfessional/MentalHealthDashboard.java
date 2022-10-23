@@ -36,7 +36,6 @@ public class MentalHealthDashboard extends AppCompatActivity {
                 Intent intent = new Intent(Intent.ACTION_CALL);
                 intent.setData(Uri.parse(number));
                 if (ContextCompat.checkSelfPermission(getApplicationContext(), Manifest.permission.CALL_PHONE) != PackageManager.PERMISSION_GRANTED) {
-                    Toast.makeText(MentalHealthDashboard.this, "Reached Here", Toast.LENGTH_SHORT).show();
                     ActivityCompat.requestPermissions(MentalHealthDashboard.this,
                             new String[]{Manifest.permission.CALL_PHONE},
                             MY_PERMISSIONS_REQUEST_CALL_PHONE);

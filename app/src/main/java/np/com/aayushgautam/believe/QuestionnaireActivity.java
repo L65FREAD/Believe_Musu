@@ -95,7 +95,7 @@ public class QuestionnaireActivity extends AppCompatActivity {
     private void showDialogue(){
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         builder.setTitle("Do You Need Professional Counselling?")
-                .setMessage("We can connect you with professionals from Koshish, there's also a toll free number which you can contact. ")
+                .setMessage("According to your answers, we feel like Professional Support might me more useful for you. Would you like to connect with a Mental Health Specialist Instead?")
                 .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialog, int id) {
                         Intent intent = new Intent(getApplicationContext(), MentalHealthDashboard.class);

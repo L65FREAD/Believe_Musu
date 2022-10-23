@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">Believe</string>
     <string name="chat_with_someone_longtext">if you are ever feeling alone and struggling, talking with someone really helps. Whenever you feel like it, we are here to listen- we are here for you. Enter a nickname for you below and chat with someone at Believe.</string>
-    <string name="meditation_benifit">meditation can provide deep relaxation and tranquility. During meditation, you can focus your mind, and eliminate the flow of disorganized thoughts that can fill your mind and cause stress. This process can improve physical and emotional health.</string>
+    <string name="meditation_benifit">we do things daily, without knowing how much value they hold in deciding our happiness. multiple research has shown how small change in habits lead to a significant improvement in one\'s mental health. but we sometimes aren\'t able to differentiate the things that make us happy. this is where Believe comes in, using our machine learning model, we will help you find the things that impact your happiness the most.</string>
     <string name="believe_intro">Believe is an initiative to make mental health more accessible to the Nepalese community. Our motto is ‘Bring Back the Child in You’. We believe that everyone deserves to be happy and loved like they once were.</string>
     <string name="koshish_partnership">Our Partnership with Koshish</string>
     <string name="specialist">Specialist</string>

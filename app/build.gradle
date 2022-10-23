@@ -37,6 +37,7 @@ android {
         versionName "1.01"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true
     }
 
     packagingOptions {
@@ -77,5 +78,9 @@ dependencies {
     implementation 'com.sun.mail:android-mail:1.6.6'
     implementation 'com.sun.mail:android-activation:1.6.6'
 
+    //piechart
+    implementation 'com.github.AnyChart:AnyChart-Android:1.1.2'
+
+    implementation 'com.android.support:multidex:1.0.3'
 
 }

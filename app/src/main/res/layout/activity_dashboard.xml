@@ -175,7 +175,7 @@
 
 
     <androidx.cardview.widget.CardView
-        android:id="@+id/self_help"
+        android:id="@+id/wellness_check"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:hapticFeedbackEnabled="true"
@@ -190,7 +190,7 @@
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="180dp"
-            android:background="@drawable/self_help_blog">
+            android:background="@drawable/wellnesscheckback">
 
             <ImageView
                 android:id="@+id/blogicon"
@@ -200,7 +200,7 @@
                 android:layout_alignParentBottom="true"
                 android:layout_marginBottom="10dp"
                 android:layout_marginEnd="10dp"
-                android:src="@drawable/blog" />
+                android:src="@drawable/wellnesscheckai" />
 
             <TextView
                 android:id="@+id/self"
@@ -234,7 +234,7 @@
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
-        android:id="@+id/self_help1"
+        android:id="@+id/self_help"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:hapticFeedbackEnabled="true"
@@ -243,7 +243,7 @@
         android:layout_marginStart="15dp"
         android:layout_marginTop="20dp"
         android:layout_marginEnd="10dp"
-        android:layout_below="@id/self_help"
+        android:layout_below="@id/wellness_check"
         android:layout_toLeftOf="@id/divider">
 
         <RelativeLayout
@@ -268,10 +268,10 @@
                 android:layout_alignParentStart="true"
                 android:layout_alignParentTop="true"
                 android:fontFamily="@font/montaga"
-                android:layout_marginStart="10dp"
+                android:layout_marginStart="20dp"
                 android:textColor="@color/black"
                 android:layout_marginTop="20dp"
-                android:text="Wellness"
+                android:text="Self-Help"
                 android:textSize="17sp"
                 android:textStyle="bold" />
 
@@ -283,8 +283,8 @@
                 android:layout_alignParentStart="true"
                 android:fontFamily="@font/montaga"
                 android:textColor="@color/black"
-                android:layout_marginStart="10dp"
-                android:text="Check"
+                android:layout_marginStart="20dp"
+                android:text="Blogs"
                 android:textSize="17sp"
                 android:textStyle="bold" />
 
@@ -297,7 +297,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="20dp"
         android:layout_marginEnd="15dp"
         android:hapticFeedbackEnabled="true"
         app:cardCornerRadius="10dp"
@@ -360,7 +360,7 @@
         android:layout_marginRight="15dp"
         android:layout_marginLeft="15dp"
         app:cardElevation="10dp"
-        android:layout_below="@id/self_help1"
+        android:layout_below="@id/self_help"
         android:layout_centerHorizontal="true">
 
 
@@ -429,6 +429,18 @@
 
     </com.getbase.floatingactionbutton.FloatingActionsMenu>
 
+    <com.getbase.floatingactionbutton.FloatingActionButton
+        android:id="@+id/helpline"
+        app:fab_size="mini"
+        app:fab_colorNormal="#FFF"
+        android:elevation="10dp"
+        android:layout_width="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/meditation"
+        app:fab_icon="@drawable/call"/>
 
 </RelativeLayout>
     <!--<?xml version="1.0" encoding="utf-8"?>-->

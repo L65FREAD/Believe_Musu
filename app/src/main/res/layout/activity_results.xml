@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".WellnessCheck.Results">
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/resulticon"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Our A.I. says"
+        android:fontFamily="@font/handlee"
+        android:layout_toRightOf="@id/icon"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="20dp"
+        android:textStyle="bold"
+        android:textSize="32sp"
+        android:textColor="#DD8708"/>
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/icon"
+        android:layout_marginEnd="20dp"
+        android:layout_below="@id/title"
+        android:text="We ran your inputs through a Machine Learning model to find out a relation between your happiness and the factors you chose. The results are presented below"
+        android:layout_marginStart="20dp"
+        android:fontFamily="@font/handlee"
+        android:textSize="12sp"
+        android:textColor="#16A089"/>
+
+    <com.anychart.AnyChartView
+        android:id="@+id/pie_chart"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/appTheme"
+        android:layout_below="@id/time"/>
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Going Out "
+        android:fontFamily="@font/handlee"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:textStyle="bold"
+        android:textSize="24sp"
+        android:textColor="#AFE26C"
+        android:layout_below="@id/pie_chart"/>
+
+
+    <TextView
+        android:id="@+id/resulttext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="most affects your happiness."
+        android:fontFamily="@font/handlee"
+        android:layout_toRightOf="@id/result"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="32dp"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:layout_below="@id/pie_chart"/>
+
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:layout_below="@id/resulttext"
+        android:text="Most of us are driven by short term happiness. While this has helped humanity do wonders, it is equally important to realize that this might not always give us the best result. The best example would be eating a candy, while candies do provide us happiness, the artificial sugar can cause us distress and anxiety which we are not able to directly relate to candy consumption. This is where Believe comes to help. With the data you provide us, we train our model to learn about your habits, thus helping you structure your daily life."
+        android:layout_marginStart="20dp"
+        android:fontFamily="@font/handlee"
+        android:textSize="12sp"
+        android:textColor="#16A089"/>
+
+
+    <Button
+        android:id="@+id/backHome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Go Back Home"
+        android:layout_marginHorizontal="60dp"
+        android:textSize="12sp"
+        android:layout_below="@id/description"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/handlee"
+        android:backgroundTint="#4E9CDD"
+        android:textColor="@color/white"/>
+
+
+
+</RelativeLayout>

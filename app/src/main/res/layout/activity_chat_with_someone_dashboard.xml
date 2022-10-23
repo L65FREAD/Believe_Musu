@@ -78,6 +78,6 @@
         android:textSize="15sp"
         android:fontFamily="@font/handlee"
         android:textColor="#717070"
-        android:text="*by clicking chat with someone, you agree to not share your personal details and be friendly. &#xA; &#xA; Note, temporarily this feature is only available on Tuesdays and Wednesdays between 10 AM to 4 PM Nepali time. If you don\'t receive a response, please contact us at chat@webelievein.life (chat data is deleted after the session)"/>
+        android:text="*by clicking chat with someone, you agree to not share your personal details and be friendly. (chat data is deleted after the session) &#xA;If you don\'t receive a response, please contact us at chat@webelievein.life"/>
 
 </RelativeLayout>
